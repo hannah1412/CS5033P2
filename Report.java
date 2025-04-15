@@ -6,6 +6,10 @@ public class Report {
     private FormattedResult result;
     private Report report;
 
+    /**
+     * Return report incorporating details of the fraud results
+     * @return report
+     */
     public Report getReport(){
         return report;
     }

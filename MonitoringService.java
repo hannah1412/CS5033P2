@@ -3,9 +3,9 @@ public class MonitoringService  implements DBInteractions, DataOperations{
     private Report report;
 
     /**
-     * Generate the report for each given result
-     * @param formattedResult
-     * @return - a report 
+     * Generate the report for the formatted result
+     * @param formattedResult the result of the fraud analysis against the compatible transaction in compatible format
+     * @return report incorporating details of the fraud results
      */
     public Report generateReport(FormattedResult formattedResult){
         return report;

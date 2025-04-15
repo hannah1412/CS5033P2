@@ -7,6 +7,10 @@ public class FraudResult {
     private CompatibleTransaction transaction;
     private FraudResult result;
 
+    /**
+     * Return fraud result in raw format
+     * @return fraud result
+     */
     public FraudResult getResult() {
         return result;
     }

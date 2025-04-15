@@ -5,8 +5,8 @@ public class AuthenticationService implements DBInteractions, DataOperations{
     
     /**
      * Validate admin's credential
-     * @param admin
-     * @return
+     * @param admin the administrator to be validated
+     * @return false if credentials are not valid, else return true and set session token
      */
     public boolean validateCredential(Admin admin){
         return false;

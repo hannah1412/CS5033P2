@@ -4,19 +4,27 @@ public class DataProcessor implements DBInteractions, DataOperations{
     private FormattedAlert formattedAlert;
     private FormattedResult formattedResult;
 
-
+    /**
+     * Formatting the transaction into a compatible format
+     * @param incomingTransaction the transaction in raw format
+     * @return formatted transaction
+     */
     public CompatibleTransaction formatTransaction(String incomingTransaction){
         return transaction;
     }
 
+    /**
+     * Queuing transactions to be analysed
+     * @param transactions the transactions in compatible format
+     */
     public void queueData(CompatibleTransaction[] transactions){
 
     }
 
     /**
      * Formatting the result according to Alert service's standard format
-     * @param fraudResult - the result of the fraud annalysis
-     * @return - formatted result
+     * @param fraudResult the result of the fraud analysis against the compatible transaction in raw format
+     * @return formatted alert
      */
     public FormattedAlert formatAlert(FraudResult fraudResult){
         return formattedAlert;
@@ -24,11 +32,11 @@ public class DataProcessor implements DBInteractions, DataOperations{
 
     /**
      * Formatting the result to send to the Monitoring service (report format)
-     * @param fraudResult
-     * @return
+     * @param fraudResult the result of the fraud analysis against the compatible transaction in raw format
+     * @return formatted result to be used in report
      */
     public FormattedResult formatResult(FraudResult fraudResult){
-        return  formattedResult;
+        return formattedResult;
     }
 
     @Override

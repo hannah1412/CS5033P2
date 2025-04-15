@@ -3,12 +3,12 @@ public class FraudAnalysis implements DataOperations, DBInteractions{
     private FraudResult result;
     
     /**
-     * perform 
-     * @param transaction
-     * @return
+     * Evaluate the validity of the transaction in compatible form
+     * @param transaction transaction in compatible format
+     * @return the fraud result, details on if it is fraud or not
      */
     public FraudResult evaluate(CompatibleTransaction transaction){
-        return  result;
+        return result;
     }
 
     @Override

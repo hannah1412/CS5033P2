@@ -2,14 +2,18 @@ import java.util.*;
 
 public class AlertService implements DBInteractions, DataOperations{
 
+    /**
+     * Alert the credit card provider of fraud
+     * @param cardProviderID the unique identifier of the card provider 
+     */
     public void alert(String cardProviderId) {
         // Send alert message to the given Card Provider 
     }
     
     /**
      * Buffer alert to be sent to card providers
-     * @param timestamp
-     * @param alertMsg
+     * @param timestamp time of fraud
+     * @param alertMsg formatted alert message - compatible for different card providers
      */
     public void recordBufferAlert(Date timestamp, FormattedAlert alertMsg){
         

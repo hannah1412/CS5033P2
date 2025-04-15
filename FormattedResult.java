@@ -8,9 +8,13 @@ public class FormattedResult {
     private Double score;
     private String reason;
     private String cardProviderID;
-    private FormattedResult fResult;
+    private FormattedResult formattedResult;
 
+    /**
+     * Return formatted result to be used by monitoring service
+     * @return formatted result
+     */
     public FormattedResult getFormattedResult() {
-        return fResult;
+        return formattedResult;
     }
 }

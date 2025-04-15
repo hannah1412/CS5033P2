@@ -8,6 +8,10 @@ public class FormattedAlert {
     private String severity;
     private FormattedAlert alert;
 
+    /**
+     * Return formatted alert to be used by alert service
+     * @return formatted alert
+     */
     public FormattedAlert getFormattedAlert() {
         return alert;
     }

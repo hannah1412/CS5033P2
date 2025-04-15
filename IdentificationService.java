@@ -4,18 +4,18 @@ public class IdentificationService implements DataOperations, DBInteractions{
 
     /**
      * Validate the card provider before registration
-     * @param cardProviderID 
-     * @return boolean
+     * @param cardProviderID the unique identifier of the card provider 
+     * @return true if the card provider is valid, false otherwise
      */
-    public boolean identify_provider(String cardProviderID){
+    public boolean identifyProvider(String cardProviderID){
 
         return false;
     }
 
     /**
-     * Registering only valid card provider 
-     * @param cardProviderID  - given card provider 
-     * @param cardProviderInfo - the additional data of the card need to be registered
+     * Registering a valid card provider into the system
+     * @param cardProviderID the unique identifier of the card provider
+     * @param cardProviderInfo additional data about the card provider to be registered
      */
     public void register(String cardProviderID, String cardProviderInfo) {   
     }
