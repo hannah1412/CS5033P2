@@ -3,13 +3,13 @@ public class IdentificationService implements DataOperations, DBInteractions{
     private boolean identified;
 
     /**
-     * Validate the card provider before registration
+     * Validate the card provider before fraud analysis
      * @param cardProviderID the unique identifier of the card provider 
      * @return true if the card provider is valid, false otherwise
      */
     public boolean identifyProvider(String cardProviderID){
 
-        return false;
+        return identified;
     }
 
     /**
