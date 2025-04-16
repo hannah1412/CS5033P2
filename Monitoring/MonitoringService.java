@@ -1,32 +1,36 @@
+package Monitoring;
+import DataProcessing.FormattedResult;
+import Interfaces.DBInteractions;
+import Interfaces.DataOperations;
 
-public class AuthenticationService implements DBInteractions, DataOperations{
-    
-    private String sessionToken;
-    
+public class MonitoringService  implements DBInteractions, DataOperations{
+
+    private Report report;
+
     /**
-     * Validate admin's credential
-     * @param admin the administrator to be validated
-     * @return false if credentials are not valid, else return true and set session token
+     * Generate the report for the formatted result
+     * @param formattedResult the result of the fraud analysis against the compatible transaction in compatible format
+     * @return report incorporating details of the fraud results
      */
-    public boolean validateCredential(Admin admin){
-        return false;
+    public Report generateReport(FormattedResult formattedResult){
+        return report;
     }
 
     @Override
     public String readFromDB(String query) {
-        // TODO 
+        // TODO
         throw new UnsupportedOperationException("Unimplemented method 'readFromDB'");
     }
 
     @Override
     public void writeToDB(String data) {
-        // TODO 
+        // TODO
         throw new UnsupportedOperationException("Unimplemented method 'writeToDB'");
     }
 
     @Override
     public String receiveData() {
-        // TODO 
+        // TODO
         throw new UnsupportedOperationException("Unimplemented method 'receiveData'");
     }
 
@@ -35,5 +39,4 @@ public class AuthenticationService implements DBInteractions, DataOperations{
         // TODO
         throw new UnsupportedOperationException("Unimplemented method 'forwardData'");
     }
-    
 }

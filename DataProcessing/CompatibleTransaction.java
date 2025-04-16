@@ -1,3 +1,4 @@
+package DataProcessing;
 import java.util.Date;
 
 public class CompatibleTransaction {

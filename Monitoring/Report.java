@@ -1,3 +1,6 @@
+package Monitoring;
+import DataProcessing.FormattedResult;
+
 public class Report {
     
     private String title;

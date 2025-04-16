@@ -1,3 +1,6 @@
+package FraudAnalysis;
+import DataProcessing.CompatibleTransaction;
+
 public class FraudResult {
     
     private String id;

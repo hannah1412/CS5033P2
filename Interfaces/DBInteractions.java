@@ -1,3 +1,4 @@
+package Interfaces;
 /**
  * Interface for handling database interactions such as reading and writing data.
  */

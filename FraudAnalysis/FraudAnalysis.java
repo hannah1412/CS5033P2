@@ -1,22 +1,20 @@
-import java.util.*;
+package FraudAnalysis;
 
-public class AlertService implements DBInteractions, DataOperations{
+import DataProcessing.CompatibleTransaction;
+import Interfaces.DBInteractions;
+import Interfaces.DataOperations;
 
-    /**
-     * Alert the credit card provider of fraud
-     * @param cardProviderID the unique identifier of the card provider 
-     */
-    public void alert(String cardProviderId) {
-        // Send alert message to the given Card Provider 
-    }
+public class FraudAnalysis implements DataOperations, DBInteractions{
+    
+    private FraudResult result;
     
     /**
-     * Buffer alert to be sent to card providers
-     * @param timestamp time of fraud
-     * @param alertMsg formatted alert message - compatible for different card providers
+     * Evaluate the validity of the transaction in compatible form
+     * @param transaction transaction in compatible format
+     * @return the fraud result, details on if it is fraud or not
      */
-    public void recordBufferAlert(Date timestamp, FormattedAlert alertMsg){
-        
+    public FraudResult evaluate(CompatibleTransaction transaction){
+        return result;
     }
 
     @Override

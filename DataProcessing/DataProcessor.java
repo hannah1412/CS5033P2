@@ -1,3 +1,8 @@
+package DataProcessing;
+import FraudAnalysis.FraudResult;
+import Interfaces.DBInteractions;
+import Interfaces.DataOperations;
+
 public class DataProcessor implements DBInteractions, DataOperations{
     
     private CompatibleTransaction transaction;
